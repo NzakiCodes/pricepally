@@ -1,13 +1,13 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
 import Navbar from '../components/navbar'
 import Hero from '../components/hero'
 import Categories from '../components/categories'
 import Partner from '../components/partner'
 import Download from '../components/download'
 import Footer from '../components/footer'
-import Category from '../components/category'
+import TestCategory from '../components/category/Test'
+// import Category from '../components/category'
 
 export default function Home() {
   return (
@@ -24,7 +24,8 @@ export default function Home() {
       {/* <main> */}
         <Navbar />
         <Hero />
-        <Category />
+        {/* <Category /> */}
+        <TestCategory />
         <Categories />
         <Partner />
         <Download />
