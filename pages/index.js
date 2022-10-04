@@ -8,6 +8,8 @@ import Download from '../components/download'
 import Footer from '../components/footer'
 import TestCategory from '../components/category/Test'
 import Script from 'next/script'
+import Tabs from '../components/categories/Tabs'
+import MobileLoader from '../components/loader/MobileLoader'
 // import Category from '../components/category'
 
 export default function Home() {
@@ -27,22 +29,24 @@ export default function Home() {
       <Hero />
       {/* <Category /> */}
       <TestCategory />
-      <Categories />
+      {/* <Categories /> */}
+      <Tabs />
       <Partner />
       <Download />
       <Footer />
+      <MobileLoader />
       {/* </main> */}
 
 
 
 
-      {/* <Script src="/static/js/jquery.min.js"></Script> */}
-      {/* <Script src="/static/js/popper.min.js"></Script> */}
+      <Script src="/static/js/jquery.min.js"></Script>
+      <Script src="/static/js/popper.min.js"></Script>
       {/* <Script src="/static/js/owl.carousel.min.js"></Script> */}
-      {/* <Script src="/static/js/bootstrap.min.js"></Script> */}
-      {/* <Script src="/static/js/script.js"></Script> */}
-      {/* <Script src="/static/js/multislider.js"></Script> */}
-      {/* <script src="/static/js/multislider.min.js"></script> */}
+      <Script src="/static/js/bootstrap.min.js"></Script>
+      <Script src="/static/js/script.js"></Script>
+      <Script src="/static/js/multislider.js"></Script>
+      {/* <Script src="/static/js/multislider.min.js"></Script> */}
     </div>
   )
 }

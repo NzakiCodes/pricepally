@@ -30,7 +30,7 @@ const TestCategory = () => {
                    
     
   
-                        <OwlCarousel className="owl-theme" responsive={false} loop margin={10} nav items={4} dots={false} >
+                        <OwlCarousel className="owl-theme" nav={false} responsive={false} loop margin={10} items={4} dots={false} >
                                 <div className="item">
                                     <div className="followers-inner">
                                         <a href="listing.html">

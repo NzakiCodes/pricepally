@@ -2,9 +2,9 @@ body {
     font-family: 'Roboto';
     overflow-x: hidden;
   }
-  /* a{
-  
-  } */
+  a{
+  text-decoration: none!important;
+  }
   /* roboto-100 - latin */
   @font-face {
     font-family: 'Roboto';

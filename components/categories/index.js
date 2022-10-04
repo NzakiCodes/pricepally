@@ -47,9 +47,7 @@ const Categories = () => {
             </div>
         </div>
        
-
-    </div>
-    <hr className="border-bottom" />
+        <hr className="border-bottom" />
         <div className="row ">
             <div className="col-lg-12">
                 <div className="tab-content main"  id="foodTabContent">
@@ -1506,8 +1504,8 @@ const Categories = () => {
 
 
 
-                     {/* fruit tab */}
-                     <div className="tab-pane fade preorder-bg" id="pre-orders" role="tabpanel" aria-labelledby="pre-orders-tab">
+                    {/* fruit tab */}
+                    <div className="tab-pane fade preorder-bg" id="pre-orders" role="tabpanel" aria-labelledby="pre-orders-tab">
                         <h6 className="inner-head mb-3 mt-3">3 Available Deals</h6>
                         <div className="">
                             <div className="row">
@@ -1616,7 +1614,7 @@ const Categories = () => {
                             </div>
                         </div>
                     </div>
-                   
+                
                 </div>
 
 
@@ -1629,6 +1627,8 @@ const Categories = () => {
                 </div>
             </div>
         </div>
+    </div>
+    
 </section>
   )
 }

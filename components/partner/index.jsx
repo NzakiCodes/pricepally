@@ -13,7 +13,7 @@ const Partner = () => {
             <div className="container">
                 <div id="media-bg" className="followers-bg mb-5">
                     <h4 className="text-center mb-4">Partners & Media</h4>
-                    <OwlCarousel className="owl-theme" id="media_partner"  autoplay={true}  autoplayTimeout={3000} autoplayHoverPause={true} lazyLoad={true} autoPlay={true} loop={true} margin={10} items={5} dots={false} >
+                    <OwlCarousel className="owl-theme" id="media_partner"  autoplay={true}  autoplayTimeout={3000} autoplayHoverPause={true} lazyLoad={true} autoPlay={true} loop={true} margin={10} items={5} dots={false} nav={false}>
                         <div className="item">
                             <a href="#">  <img className="media-img" src="/images/media-img1.png" alt="media-img1" /> </a>
                         </div>

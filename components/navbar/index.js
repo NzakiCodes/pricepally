@@ -199,10 +199,10 @@ const Navbar = () => {
             <div className="container">
                 <div className="d-flex mb-3">
                     <div className=" justify-content-start">
-                        <img className="mobile-logo" src="assets/images/main-logo.svg" alt="mobile-logo" />
+                        <img className="mobile-logo" src="/images/main-logo.svg" alt="mobile-logo" />
                     </div>
                     <div className=" ml-auto justify-content-end">
-                        <img className="profile-img" src="assets/images/profile_img.jpg" alt="profile-img" />
+                        <img className="profile-img" src="/images/profile_img.jpg" alt="profile-img" />
                     </div>
                 </div>                
             </div>
