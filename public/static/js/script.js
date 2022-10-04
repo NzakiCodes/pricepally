@@ -688,7 +688,7 @@ $(document).ready(function() {
 let isDown = false;
 let startX;
 let scrollLeft;
-const slider = document.querySelector('.items');
+const slider = window.document.querySelector('.items');
 
 
 const end = () => {
