@@ -27,7 +27,7 @@ export default function Home() {
         {/* <Category /> */}
         <TestCategory />
         <Categories />
-        <Partner />
+        {/* <Partner /> */}
         <Download />
         <Footer />
       {/* </main> */}
