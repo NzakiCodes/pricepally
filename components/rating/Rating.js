@@ -1,27 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { IoIosStar, IoIosStarOutline } from 'react-icons/io'
-import { GetProducts as getProducts } from '../../hooks/useAPI'
 function Rating(props){
-    const [data, setData] = useState([]) //initial state empty array
-    const [recommendedProducts, setRecommendedProducts] = useState([]) //initial state empty array
-    useEffect(() => {
-      async function fetchData() {
-        const data = await getProducts();
-        setData(data);
-        console.log('dcata', data)
-  
-        setRecommendedProducts(data.recommendedproducts);
-      }
-      fetchData();
-    }, []);
-
-    console.log('recommendedProducts', recommendedProducts)
-    
-    const rate = recommendedProducts.map((product) =>(
-         product.product_rating
-    ) )
-
-  const [rating, setRating] = useState(rate)
+  const [rating, setRating] = useState(props.rate)
   return (
     <div style={styles.starStyle}>
       {rating >= 1 ? (

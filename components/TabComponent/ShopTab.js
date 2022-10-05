@@ -74,7 +74,7 @@ const ShopTab = () => {
 
                         </div>
                     </div>
-                    <div classNameName="col-md-6 col-lg-3 ">
+                    <div className="col-md-6 col-lg-3 ">
                         <div className="pally-inner">
                             <div className="products-img-wrapper  mb-3 pointer">
                                 <a href="#">
