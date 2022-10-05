@@ -13,7 +13,7 @@ const ProductCard = ({ id, image, name, discount, price, reviewsCount, rate }) =
                                 favorite_border
                             </span>
                         </div>
-                        <img className="mb-3 product-img" src={image} alt="Product-img1" />
+                        <img className="mb-3 product-img" src={image} alt={name} />
                     </a>
                 </div>
 
