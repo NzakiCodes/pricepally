@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { GetProducts as getProducts } from '../../hooks/useAPI';
+import Rating from '../rating/Rating';
 
-const ProductCard = () => {
+const ProductCard = (props) => {
     const [data, setData] = useState([]) //initial state empty array
     const [recommendedProducts, setRecommendedProducts] = useState([]) //initial state empty array
     useEffect(() => {
@@ -14,9 +15,12 @@ const ProductCard = () => {
       }
       fetchData();
     }, []);
-  
-    console.log('recommendedProducts', recommendedProducts)
 
+    const rate = recommendedProducts.map((product) =>(
+      product.product_rating
+   ) )
+  
+    
   
 
   
@@ -34,7 +38,7 @@ const ProductCard = () => {
                                 favorite_border
                             </span>
                         </div>
-                        <img className="mb-3 product-img" src="/images/Product-img5.png" alt="Product-img1" />
+                        <img className="mb-3 product-img" src={product.product_images} alt="Product-img1" />
                     </a>
                 </div>
 
@@ -54,12 +58,22 @@ const ProductCard = () => {
                         {/* <div className="no-ratings"><p>No ratings yet</p></div> */}
                         <div className="rating-main pro-detail-star" data-vote="0">
                         <div className="star">
-                                <span className="full" data-value={product.product_rating}></span>
+                        <span><Rating 
+                            rating={rate} numOfReviews={product.total_reviews}
+                            /></span><span>{product.total_reviews}</span>
+                                {/* <span className="full" data-value={product.total_reviews}>{product.total_reviews}</span> */}
                                 {/* <span className="half" data-value="0.5"></span> */}
-                                <span className="selected"></span>
+                                {/* <span className="selected"></span> */}
 
                         </div>
                         </div>
+                        {/* <div className="rating-main pro-detail-star" data-vote="0"> */}
+                            {/* <div className="mainstar hidden"> */}
+                            
+                                {/* <span className="full" data-value="0"></span>
+                                <span className="half" data-value="0"></span> */}
+                            {/* </div> */}
+                        {/* </div> */}
                         {/* <!-- <div className="rating-main pro-detail-star" data-vote="0">
                             <div className="mainstar hidden">
                                 <span className="full" data-value="0"></span>

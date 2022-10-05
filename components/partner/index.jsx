@@ -10,13 +10,12 @@ const options = {
     autoplay:true,
     margin:60,
     loop:true,
-    nav:false,
-    // dots:true,
+    nav: false,
+    dots: false,
 
     responsive:{
         0:{
             items:1,
-            nav:false
         },
         999:{
             items:2,
