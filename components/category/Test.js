@@ -11,6 +11,24 @@ import dynamic from "next/dynamic";
 const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
   ssr: false,
 });
+const options = {
+    loop: false,
+        margin: 5,
+        autoplay: true,
+        nav: false,
+        responsive: {
+            0:{
+                items:1,
+                nav:false
+            },
+            999:{
+                items:2,
+            },
+            1000:{
+                items:4
+            }
+            }
+}
 
 const TestCategory = () => {
   return (
@@ -30,7 +48,7 @@ const TestCategory = () => {
                    
     
   
-                        <OwlCarousel className="owl-theme" nav={false} responsive={false} loop margin={10} items={4} dots={false} >
+                        <OwlCarousel className="owl-theme" {...options} >
                                 <div className="item">
                                     <div className="followers-inner">
                                         <a href="listing.html">

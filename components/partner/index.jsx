@@ -6,6 +6,26 @@ ssr: false,
 
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
+const options = {
+    autoplay:true,
+    margin:60,
+    loop:true,
+    nav:false,
+    // dots:true,
+
+    responsive:{
+        0:{
+            items:1,
+            nav:false
+        },
+        999:{
+            items:2,
+        },
+        1000:{
+            items:5
+        }
+    }
+}
 const Partner = () => {
   return (
     <div>
@@ -13,7 +33,7 @@ const Partner = () => {
             <div className="container">
                 <div id="media-bg" className="followers-bg mb-5">
                     <h4 className="text-center mb-4">Partners & Media</h4>
-                    <OwlCarousel className="owl-theme" id="media_partner"  autoplay={true}  autoplayTimeout={3000} autoplayHoverPause={true} lazyLoad={true} autoPlay={true} loop={true} margin={10} items={5} dots={false} nav={false}>
+                    <OwlCarousel className="owl-theme" id="media_partner"  {...options}>
                         <div className="item">
                             <a href="#">  <img className="media-img" src="/images/media-img1.png" alt="media-img1" /> </a>
                         </div>
