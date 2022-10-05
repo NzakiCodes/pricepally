@@ -56,19 +56,7 @@ const Partner = () => {
                             <a href="#"> <img className="media-img" src="/images/media-img3.png" alt="media-img1" /> </a>
                         </div>
                     </OwlCarousel>
-                    {/* <div id="mediaSlider" className="dvslider">
-                        <div className="MS-content">
-                            <div className="item">
-                              <a href="#">  <img className="media-img" src="/images/media-img1.png" alt="media-img1" /> </a>
-                            </div>
-                            <div className="item">
-                                <a href="#"> <img className="media-img" src="/images/media-img2.png" alt="media-img1" /> </a>
-                            </div>
-                            <div className="item">
-                                <a href="#"> <img className="media-img" src="/images/media-img3.png" alt="media-img1" /> </a>
-                            </div>
-                        </div>
-                    </div>  */}
+                    
                 </div>
             </div>
         </section>
